@@ -9,6 +9,7 @@ class App extends Component {
             <section>
                 <MCHeaderComponent>Media Collection</MCHeaderComponent>
                 <Link to="/test">Test</Link>
+                <Link to="/Login">Login</Link>
                 { this.props.children }
             </section>
         );

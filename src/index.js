@@ -9,6 +9,7 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 import App from './App';
 import './index.css';
 import { TestComponent as Test } from './components/test/test.component';
+import { LoginPageComponent } from './pages/login/login-page.component';
 
 const store = createStore(
     combineReducers({
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Router history={ history }>
             <Route path="/" component={ App }>
                 <Route path="/test" component={ Test }/>
+                <Route path="/login" component={ LoginPageComponent } />
             </Route>
         </Router>
     </Provider>,
