@@ -4,3 +4,4 @@ html, body {
     height: 100vh;
     width: 100vw;
 }
+.linear-gray { background: linear-gradient(#484e55, #3a3f44 60%, #313539) no-repeat; }

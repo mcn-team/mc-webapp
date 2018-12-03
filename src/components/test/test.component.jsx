@@ -1,12 +1,8 @@
 import React from 'react';
+import { withRouter } from "react-router-dom";
 
-export class TestComponent extends React.Component {
-    constructor(props) {
-        super(props);
 
-        this.state = {};
-    }
-
+class TestComponent extends React.Component {
     render() {
         return (
             <div>
@@ -16,3 +12,5 @@ export class TestComponent extends React.Component {
         );
     }
 }
+
+export const TestWithRouter = withRouter(TestComponent);
